@@ -1,14 +1,13 @@
 package com.devsuperior.dsmeta.dto;
 
-
 public class SaleSummaryDTO {
 
     private String sellerName;
-    private Double amount;
+    private Double total;
 
-    public SaleSummaryDTO(String sellerName, Double amount) {
+    public SaleSummaryDTO(String sellerName, Double total) {
         this.sellerName = sellerName;
-        this.amount = amount;
+        this.total = total;
     }
 
     public String getSellerName() {
@@ -19,11 +18,11 @@ public class SaleSummaryDTO {
         this.sellerName = sellerName;
     }
 
-    public Double getAmount() {
-        return amount;
+    public Double getTotal() {
+        return total;
     }
 
-    public void setAmount(Double amount) {
-        this.amount = amount;
+    public void setTotal(Double total) {
+        this.total = total;
     }
 }
